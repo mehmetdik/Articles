@@ -15,13 +15,16 @@
   <% end %>
  
   <p>
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
+   <h3> <span class="label label-warning"><%= f.label :title %></span></h3>
+
+    <br>
+    <%= f.text_field :title , :size => "30x10"%>
   </p>
  
   <p>
-    <%= f.label :text %><br>
-    <%= f.text_area :text %>
+  <h3> <span class="label label-warning"><%= f.label :text  %><br></span></h3>
+    
+    <%= f.text_area :text, :size => "100x20"%>
   </p>
  
   <p>

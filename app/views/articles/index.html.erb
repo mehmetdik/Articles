@@ -1,25 +1,30 @@
-<h1>Listing articles</h1>
+<h1>Listing Tales</h1>
+<hr>
 
-<table>
-	<tr>
-		<th>Title</th>
-		<th>Text</th>
-		<th colspan="2"></th>
-	</tr>
+<table >
+	
 
 
 	<% @articles.each do |article| %>
 	<tr>
+
 		<th><%= article.title %></th>
-		<th><%= article.text %></th>
-		<td><button type="submit" class="btn btn-default"><%= link_to 'Show', article_path(article) %></button></td>
-		<td><button type="submit" class="btn btn-default"><%= link_to 'Edit', edit_article_path(article) %></button></td>
-		<td><button type="submit" class="btn btn-default"><%= link_to 'Destroy', article_path(article), method: :delete, data:{confirm: 'Are you sure?'} %></button></td>
+		<td height="50"> </td>
 		
+		<td><button type="submit" class="btn btn-default"><%= link_to 'Show', article_path(article) %></button></td>
+		
+
+		<td><button type="submit" class="btn btn-default"><%= link_to 'Edit', edit_article_path(article) %></button></td>
+		
+		<td><button type="submit" class="btn btn-default"><%= link_to 'Destroy', article_path(article), method: :delete, data:{confirm: 'Are you sure?'} %></button></td>
+
 	</tr>
 
-	<% end %>
-</table>
 
-<h1>Hello, Rails!</h1>
-<button type="submit" class="btn btn-default"><%= link_to 'New article', new_article_path %></button>
+
+	<% end %>
+
+</table>
+<hr>
+
+<button type="submit" class="btn btn-default"><%= link_to 'New Tale', new_article_path %></button>

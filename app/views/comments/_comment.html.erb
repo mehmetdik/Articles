@@ -1,3 +1,4 @@
+
 <p>
   <strong>Commenter:</strong>
   <%= comment.commenter %>
@@ -9,6 +10,7 @@
 </p>
 
 <p>
-	<%= link_to 'Destroy Comment', [comment.article, comment], method: :delete,
-		data: {confirm: 'Are you sure?'} %>
+	<button> <%= link_to 'Destroy Comment', [comment.article, comment], method: :delete,
+		data: {confirm: 'Are you sure?'} %> </button>
 </p>
+<hr>
