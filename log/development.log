@@ -17518,3 +17518,668 @@ Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde
 
 
 Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2015-05-10 11:33:58 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-12 00:04:00 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navbar.html.erb (0.7ms)
+Completed 200 OK in 568ms (Views: 548.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-12 00:04:02 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 86ms (Views: 85.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-12 00:04:04 +0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (23.6ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (31.0ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+Completed 200 OK in 206ms (Views: 149.2ms | ActiveRecord: 23.9ms)
+
+
+Started GET "/articles/10" for 127.0.0.1 at 2015-05-12 00:04:07 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 10]]
+  Rendered comments/_comment.html.erb (13.8ms)
+  Rendered articles/show.html.erb within layouts/application (120.2ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 261ms (Views: 196.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-12 00:48:37 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 107ms (Views: 105.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-12 00:48:46 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (1.9ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 79ms (Views: 78.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-12 01:12:15 +0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+Completed 200 OK in 257ms (Views: 247.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-12 01:12:15 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (0.1ms)
+Completed 200 OK in 114ms (Views: 112.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-12 01:12:20 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (0.3ms)
+Completed 200 OK in 151ms (Views: 150.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-12 01:12:23 +0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (4.8ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 86ms (Views: 81.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-12 01:12:26 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 91ms (Views: 87.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-12 01:12:29 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 110ms (Views: 108.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-12 01:12:30 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.2ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 83ms (Views: 81.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/10" for 127.0.0.1 at 2015-05-12 01:12:53 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mArticle Load (0.2ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 10]]
+  Rendered comments/_comment.html.erb (2.2ms)
+  Rendered articles/show.html.erb within layouts/application (32.7ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 130ms (Views: 123.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-12 01:13:06 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 91ms (Views: 89.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-12 01:13:07 +0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.3ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 86ms (Views: 85.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/10/edit" for 127.0.0.1 at 2015-05-12 01:14:36 +0300
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"10"}
+Filter chain halted as #<Proc:0x007fae7e28ba20@/home/mehmet/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/10/edit" for 127.0.0.1 at 2015-05-12 01:14:37 +0300
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"10"}
+Filter chain halted as #<Proc:0x007fae7e28ba20@/home/mehmet/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/11" for 127.0.0.1 at 2015-05-12 01:14:45 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 11]]
+  Rendered comments/_comment.html.erb (0.5ms)
+  Rendered articles/show.html.erb within layouts/application (4.0ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 98ms (Views: 97.4ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/11/comments/5" for 127.0.0.1 at 2015-05-12 01:14:51 +0300
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NClb/MW8BoxLevgwfKh7iET60nB+QyQ2pxQSMScEz86IKzzKMdSujP/YFNSujS6P2Exr/NCOwdrujY75W7mfGQ==", "article_id"=>"11", "id"=>"5"}
+Filter chain halted as #<Proc:0x007fae74aecae8@/home/mehmet/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started DELETE "/articles/11/comments/5" for 127.0.0.1 at 2015-05-12 01:14:56 +0300
+Processing by CommentsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NClb/MW8BoxLevgwfKh7iET60nB+QyQ2pxQSMScEz86IKzzKMdSujP/YFNSujS6P2Exr/NCOwdrujY75W7mfGQ==", "article_id"=>"11", "id"=>"5"}
+Filter chain halted as #<Proc:0x007fae74aecae8@/home/mehmet/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/11" for 127.0.0.1 at 2015-05-12 01:15:11 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mArticle Load (0.4ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 11]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 11]]
+  Rendered comments/_comment.html.erb (1.1ms)
+  Rendered articles/show.html.erb within layouts/application (8.1ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 98ms (Views: 95.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-12 01:15:16 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 96ms (Views: 95.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-12 01:15:18 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 88ms (Views: 87.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-12 01:15:45 +0300
+Processing by ArticlesController#new as HTML
+Filter chain halted as #<Proc:0x007fae7e28ba20@/home/mehmet/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-12 01:15:47 +0300
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (3.3ms)
+  Rendered articles/new.html.erb within layouts/application (5.8ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 99ms (Views: 97.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2015-05-12 01:16:12 +0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2towlMZ5lGOoEgihyRRjHv1mbgFoRBfiT7l7Eo3VcVlm2FeiMhE8Yxyw5EUbMTYZYdDXjcaJ8g4GIOfa8Wghjg==", "article"=>{"title"=>"Sağır Kurbağa", "text"=>"Kurbağalar bir gün yarışma düzenlemiş. Hedef; çok yüksek bir kulenin tepesine çıkmakmış. Bir sürü kurbağa da\r\narkadaşlarını seyretmek için toplanmış ve yarış başlamış. Gerçekte seyirciler arasında hiçbiri yarışmacıların\r\nkulenin tepesine çıkabileceğine inanmıyormuş. Sadece şu sesler duyulabiliyormuş:\r\n\r\n”Zavallılar! hiçbir zaman başaramayacaklar!”\r\n\r\nYarışmaya başlayan kurbağalar kulenin tepesine ulaşamayınca teker teker yarışı bırakmaya başlamışlar. İçlerinden sadece bir tanesi inatla ve yılmadan kuleye tırmanmaya çalışıyormuş. Seyirciler bağırmaya devam ediyorlarmış:\r\n\r\n”Zavallılar! hiçbir zaman başaramayacaklar!”\r\n\r\nSonunda bir tanesi hariç, hepsinin ümitleri kırılmış ve bırakmışlar. Ama kalan son kurbağa büyük bir gayret ile\r\nmücadele ederek kulenin tepesine çıkmayı başarmış. Diğerleri hayret içerisinde bu işi nasıl başardığını öğrenmek\r\nistemişler. Bir kurbağa ona yaklaşmış ve sormuş;\r\n\r\n”Bu işi nasıl başardın?” diye.\r\n\r\nO anda farkına varmışlar ki; Kuleye çıkan kurbağa sağırmış!\r\nSiz de, hayallerinizi gerçekleştiremeyeceğinizi söyleyen söz ve kişilere karşı hep sağır kalın. Olumsuz düşünen\r\ninsanları duymayın!.."}}
+Filter chain halted as #<Proc:0x007fae7e28ba20@/home/mehmet/.rbenv/versions/2.1.2/lib/ruby/gems/2.1.0/gems/actionpack-4.2.0/lib/action_controller/metal/http_authentication.rb:71> rendered or redirected
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/articles" for 127.0.0.1 at 2015-05-12 01:16:12 +0300
+Processing by ArticlesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2towlMZ5lGOoEgihyRRjHv1mbgFoRBfiT7l7Eo3VcVlm2FeiMhE8Yxyw5EUbMTYZYdDXjcaJ8g4GIOfa8Wghjg==", "article"=>{"title"=>"Sağır Kurbağa", "text"=>"Kurbağalar bir gün yarışma düzenlemiş. Hedef; çok yüksek bir kulenin tepesine çıkmakmış. Bir sürü kurbağa da\r\narkadaşlarını seyretmek için toplanmış ve yarış başlamış. Gerçekte seyirciler arasında hiçbiri yarışmacıların\r\nkulenin tepesine çıkabileceğine inanmıyormuş. Sadece şu sesler duyulabiliyormuş:\r\n\r\n”Zavallılar! hiçbir zaman başaramayacaklar!”\r\n\r\nYarışmaya başlayan kurbağalar kulenin tepesine ulaşamayınca teker teker yarışı bırakmaya başlamışlar. İçlerinden sadece bir tanesi inatla ve yılmadan kuleye tırmanmaya çalışıyormuş. Seyirciler bağırmaya devam ediyorlarmış:\r\n\r\n”Zavallılar! hiçbir zaman başaramayacaklar!”\r\n\r\nSonunda bir tanesi hariç, hepsinin ümitleri kırılmış ve bırakmışlar. Ama kalan son kurbağa büyük bir gayret ile\r\nmücadele ederek kulenin tepesine çıkmayı başarmış. Diğerleri hayret içerisinde bu işi nasıl başardığını öğrenmek\r\nistemişler. Bir kurbağa ona yaklaşmış ve sormuş;\r\n\r\n”Bu işi nasıl başardın?” diye.\r\n\r\nO anda farkına varmışlar ki; Kuleye çıkan kurbağa sağırmış!\r\nSiz de, hayallerinizi gerçekleştiremeyeceğinizi söyleyen söz ve kişilere karşı hep sağır kalın. Olumsuz düşünen\r\ninsanları duymayın!.."}}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "articles" ("title", "text", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Sağır Kurbağa"], ["text", "Kurbağalar bir gün yarışma düzenlemiş. Hedef; çok yüksek bir kulenin tepesine çıkmakmış. Bir sürü kurbağa da\r\narkadaşlarını seyretmek için toplanmış ve yarış başlamış. Gerçekte seyirciler arasında hiçbiri yarışmacıların\r\nkulenin tepesine çıkabileceğine inanmıyormuş. Sadece şu sesler duyulabiliyormuş:\r\n\r\n”Zavallılar! hiçbir zaman başaramayacaklar!”\r\n\r\nYarışmaya başlayan kurbağalar kulenin tepesine ulaşamayınca teker teker yarışı bırakmaya başlamışlar. İçlerinden sadece bir tanesi inatla ve yılmadan kuleye tırmanmaya çalışıyormuş. Seyirciler bağırmaya devam ediyorlarmış:\r\n\r\n”Zavallılar! hiçbir zaman başaramayacaklar!”\r\n\r\nSonunda bir tanesi hariç, hepsinin ümitleri kırılmış ve bırakmışlar. Ama kalan son kurbağa büyük bir gayret ile\r\nmücadele ederek kulenin tepesine çıkmayı başarmış. Diğerleri hayret içerisinde bu işi nasıl başardığını öğrenmek\r\nistemişler. Bir kurbağa ona yaklaşmış ve sormuş;\r\n\r\n”Bu işi nasıl başardın?” diye.\r\n\r\nO anda farkına varmışlar ki; Kuleye çıkan kurbağa sağırmış!\r\nSiz de, hayallerinizi gerçekleştiremeyeceğinizi söyleyen söz ve kişilere karşı hep sağır kalın. Olumsuz düşünen\r\ninsanları duymayın!.."], ["created_at", "2015-05-11 22:16:12.454574"], ["updated_at", "2015-05-11 22:16:12.454574"]]
+  [1m[35m (296.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles/13
+Completed 302 Found in 303ms (ActiveRecord: 297.5ms)
+
+
+Started GET "/articles/13" for 127.0.0.1 at 2015-05-12 01:16:12 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 13]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 13]]
+  Rendered collection (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (4.2ms)
+  Rendered shared/_navbar.html.erb (0.1ms)
+Completed 200 OK in 108ms (Views: 106.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-12 01:16:39 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 89ms (Views: 88.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-12 01:16:42 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 95ms (Views: 93.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-12 01:17:20 +0300
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.6ms)
+  Rendered articles/new.html.erb within layouts/application (2.7ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 95ms (Views: 93.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-12 01:18:26 +0300
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.5ms)
+  Rendered articles/new.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 83ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-467db9fdd5d10a5d75eb84c93b91d7cf98f95e917bcf85156d67e7a14156f23c.css?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:27 +0300
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-12 01:18:43 +0300
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.6ms)
+  Rendered articles/new.html.erb within layouts/application (2.3ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 87ms (Views: 86.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-467db9fdd5d10a5d75eb84c93b91d7cf98f95e917bcf85156d67e7a14156f23c.css?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:44 +0300
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (2.2ms)
+  Rendered articles/new.html.erb within layouts/application (3.0ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 106ms (Views: 104.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/application.self-467db9fdd5d10a5d75eb84c93b91d7cf98f95e917bcf85156d67e7a14156f23c.css?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2015-05-12 01:18:59 +0300
+
+
+Started GET "/articles/new" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+Processing by ArticlesController#new as HTML
+  Rendered articles/_form.html.erb (1.9ms)
+  Rendered articles/new.html.erb within layouts/application (2.9ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 94ms (Views: 93.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-467db9fdd5d10a5d75eb84c93b91d7cf98f95e917bcf85156d67e7a14156f23c.css?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/jquery.self-d03a5518f45df77341bdbe6201ba3bfa547ebba8ed64f0ea56bfa5f96ea7c074.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/bootstrap/affix.self-68d1a5161d04ca9fe1b9d9f4114d9426c7798bf90f2703a97aca35c8113469bb.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/bootstrap/alert.self-15ce09eba576e56db3edfd87accc0ff48823df915169e350b4fd97290f96aee1.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/jquery_ujs.self-8e98a7a072a6cee1372d19fff9ff3e6aa1e39a37d89d6f06861637d061113ee7.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/bootstrap/button.self-37c62bff1d75f86f3348b8679873d5156d8b9938b62841038dca21690f4740f1.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/bootstrap/carousel.self-9aaab1a477b9c1156bab751cb8da47f77dace6da88eef8ae830e60f3cff3a8be.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/bootstrap/dropdown.self-a3998e7ca949c04cb86b5c635deb0abcc7a24dc02e81be66b8acfef02d811e45.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/bootstrap/collapse.self-eeece00cd06a3d7cc071ab7845b549d4991edd0f0895e4be70fe40bac2fb5f4b.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/bootstrap/scrollspy.self-5ea180afe4404f83fc97d997833f2edefd34475b0b5ddab310e27abc2bbd5f2f.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/bootstrap/modal.self-f2759e138605770e60526c00c6d86cbb3378da203641f9d6b204c9f0192b9267.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/bootstrap/tab.self-e1bba7115c90301056ee94c4716de2fcbe4498015def2dab9ff9879f339bd245.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/bootstrap/transition.self-7742dca5e6acf313fbb217811b48468282cddf1a9baea5c89ec92e367ef242cb.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/bootstrap/tooltip.self-c3b5c16f394ab9c0391db4431aac4f2d2ddf1bba4c5d3228ed343de05ecc8e83.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/bootstrap/popover.self-2674d99c3ab0415dba0b958a80b3840f70ff6368b155d890306c0291be49453b.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/articles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/assets/application.self-f98a0dd27ad1c55b2b9cfe97296d4887e5d4a4535b3bbbf9130c1050771738b2.js?body=1" for 127.0.0.1 at 2015-05-12 01:19:10 +0300
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-12 01:19:32 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 85ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-12 01:19:35 +0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.3ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 90ms (Views: 89.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/10" for 127.0.0.1 at 2015-05-12 01:19:39 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mComment Load (0.1ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?  [["article_id", 10]]
+  Rendered comments/_comment.html.erb (0.3ms)
+  Rendered articles/show.html.erb within layouts/application (3.3ms)
+  Rendered shared/_navbar.html.erb (0.1ms)
+Completed 200 OK in 96ms (Views: 93.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-12 01:20:06 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  Rendered shared/_navbar.html.erb (0.1ms)
+Completed 200 OK in 85ms (Views: 84.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-12 01:20:07 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.4ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 98ms (Views: 97.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/11" for 127.0.0.1 at 2015-05-12 01:20:10 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 11]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 11]]
+  Rendered comments/_comment.html.erb (0.5ms)
+  Rendered articles/show.html.erb within layouts/application (3.9ms)
+  Rendered shared/_navbar.html.erb (0.1ms)
+Completed 200 OK in 96ms (Views: 95.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-12 01:20:57 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.3ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 89ms (Views: 88.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-12 01:20:59 +0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (1.9ms)
+  Rendered shared/_navbar.html.erb (0.1ms)
+Completed 200 OK in 97ms (Views: 95.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/articles/10/edit" for 127.0.0.1 at 2015-05-12 01:21:00 +0300
+Processing by ArticlesController#edit as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mArticle Load (0.1ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 10]]
+  Rendered articles/_form.html.erb (2.0ms)
+  Rendered articles/edit.html.erb within layouts/application (4.6ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 95ms (Views: 94.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-05-12 01:21:20 +0300
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 88ms (Views: 87.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-12 01:21:22 +0300
+Processing by ArticlesController#index as HTML
+  [1m[35mArticle Load (0.2ms)[0m  SELECT "articles".* FROM "articles"
+  Rendered articles/index.html.erb within layouts/application (2.1ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 104ms (Views: 103.0ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/articles/10" for 127.0.0.1 at 2015-05-12 01:21:27 +0300
+Processing by ArticlesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uSWXaONhzWAV/RwDK/0BU6uWJSbsqh27zb+CFeRQRTIFJ/BeFwllYKFf8Of52FRUNyCcqkJn+FeEJh7dmO0V5Q==", "id"=>"10"}
+  [1m[36mArticle Load (0.2ms)[0m  [1mSELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 10]]
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "comments" WHERE "comments"."id" = ?  [["id", 4]]
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "articles" WHERE "articles"."id" = ?[0m  [["id", 10]]
+  [1m[35m (268.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/articles
+Completed 302 Found in 274ms (ActiveRecord: 269.5ms)
+
+
+Started GET "/articles" for 127.0.0.1 at 2015-05-12 01:21:28 +0300
+Processing by ArticlesController#index as HTML
+  [1m[36mArticle Load (0.3ms)[0m  [1mSELECT "articles".* FROM "articles"[0m
+  Rendered articles/index.html.erb within layouts/application (2.0ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 92ms (Views: 90.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/articles/12" for 127.0.0.1 at 2015-05-12 01:21:43 +0300
+Processing by ArticlesController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[35mArticle Load (0.1ms)[0m  SELECT  "articles".* FROM "articles" WHERE "articles"."id" = ? LIMIT 1  [["id", 12]]
+  [1m[36mComment Load (0.1ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."article_id" = ?[0m  [["article_id", 12]]
+  Rendered collection (0.0ms)
+  Rendered articles/show.html.erb within layouts/application (3.1ms)
+  Rendered shared/_navbar.html.erb (0.0ms)
+Completed 200 OK in 96ms (Views: 95.0ms | ActiveRecord: 0.2ms)
